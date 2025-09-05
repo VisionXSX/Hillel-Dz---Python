@@ -16,7 +16,7 @@ elif ' ' in name:
     result = False
 elif any(c in string.punctuation and c != '_' for c in name):
     result = False
-elif name.count('_') > 1:
+elif name.count('__') >= 1:
     result = False
 
 print(result)
